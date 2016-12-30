@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>Saul's blog</title>
+  </head>
+  <body>
+    <div>
+      <h1><a href="">Saul's blog</a></h1>
+    </div>
+    <div>
+      <p>published: 2016-12-26 16:41:11</p>
+      <h2><a href="">Django Tutorial 1: Django 템플릿 생성</a></h2>
+      <p>
+        1. 현재 디렉토리에 장고 템플릿 생성<br>
+         > django-admin startproject mysite .<br>
+        <br>
+        2. 웹사이트 설정 변경<br>
+         settings.py<br>
+         TIME_ZONE = 'Asia/Seoul'<br>
+         STATIC_ROOT = os.path.join(BASE_DIR, 'static')<br>
+        <br>
+        3. DB 이관<br>
+         > python manage.py migrate<br>
+        <br>
+        4. 웹서버 기동<br>
+         > python manage.py runserver
+      </p>
+    </div>
+    <div>
+      <p>published: 2016-12-26 16:42:01</p>
+      <h2><a href="">Django Tutorial 2: 웹애플리케이션 등록</a></h2>
+      <p>
+        5. 웹애플리케이션 생성<br>
+         > python manage.py startapp weblog<br>
+        <br>
+        6. 웹애플리케이션 등록<br>
+         settings.py<br>
+         INSTALLED_APPS = [<br>
+           ...,<br>
+           'weblog',<br>
+         ]<br>
+      </p>
+    </div>
+  </body>
+</html>
